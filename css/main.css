@@ -75,9 +75,8 @@ input {
 .contact {
   display: flex;
   align-items: center;
-  background-color: #A1EAFB;
   color: #4A4A4A;
-  border-bottom: 1px solid #F6F6F6;
+  border-bottom: 1px solid #4a4a4a;
   padding: 10px;
 }
 .data-contact {
