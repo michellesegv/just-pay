@@ -5,8 +5,8 @@ $.getJSON("data.json", (data) => {
     const divName = $(`<h6 class='text-left'>${contact.name}</h6>`);
     const divPhone = $(`<p class='text-left'>${contact.phone}</p>`);
     const divIcon = $('<div class="image-user center"></div>');
-    const imageUser = $('<i class="material-icons">account_circle</i>');
-    const send = $('<i class="material-icons left">send</i>');
+    const imageUser = $('<i class="user-icon material-icons">account_circle</i>');
+    const send = $('<i class="send-icon material-icons left">send</i>');
 
     divIcon.append(imageUser);
     divData.append(divName);

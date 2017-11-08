@@ -1,29 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway');
+
+
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/*
-Azul verdoso oscuro
-rgba(0, 48, 73, 1);
-
-Rojo pinky
-rgba(214, 40, 40, 1);
-
-Naranja
-rgba(247, 127, 0, 1);
-
-Amarillo yelow claro
-rgba(252, 191, 73, 1);
-
-Hueso
-rgba(234, 226, 183, 1);
-*/
+header {
+  font-family: "Pacifico";
+  text-align: center;
+  width: 100%;
+  background-color: #FF395E;
+  padding: 18px;
+  color: white;
+  position: fixed;
+  font-size: 30px;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+}
 
 /* clases reutilizables */
 body {
-  color: white;
+  background-color: #FFF4C9;
+  color: #4A4A4A;
+  font-family: "Raleway";
 }
 .center {
   text-align: center;
@@ -40,8 +42,8 @@ body {
   border-bottom-color: red !important;
 }
 .bg-blue {
-  background-color: rgba(0, 48, 73, 1);
-  color: white;
+  background-color: #F6F6F6 !important;
+  color: #4A4A4A;
 }
 .bg-yellow {
   background-color: rgba(252, 191, 73, 1);
@@ -52,8 +54,7 @@ input {
   box-shadow:0 0 0 0 transparent !important;
 }
 .container-data {
-  background-color: rgba(0, 48, 73, 1);
-  color: rgba(252, 191, 73, 1);
+  color: #4A4A4A;
 }
 .flex-container {
   display: flex;
@@ -61,48 +62,78 @@ input {
   height: 100vh;
 }
 .button {
-  background-color: rgba(214, 40, 40, 1);
+  font-weight: bold;
+  background-color: #143A52;
 }
 
 /* Contacts */
 
+.container-contacts {
+  margin-top: 100px;
+
+}
 .contact {
   display: flex;
   align-items: center;
-  background-color: rgba(214, 40, 40, 1);
-  border-bottom: 1px solid white;
+  background-color: #A1EAFB;
+  color: #4A4A4A;
+  border-bottom: 1px solid #F6F6F6;
   padding: 10px;
 }
 .data-contact {
   width: 75%;
-  padding-left: 10%;
+  padding-left: 10px;
   display: inline-block;
+  font-size: 0.8em;
 }
 .data-contact h6 {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+}
+.contact .send-icon {
+  position: absolute;
+  float: left;
+  right: 35px;
 }
 .image-user {
   display: inline-block;
-  width: 15%;
+  width: 20%;
 }
 .image-user i {
-  font-size: 3rem;
+  font-size: 2rem;  
 }
-
 /* Payment */
 .amount i, .amount input {
   font-size: 4rem !important;
 }
-
+#amount  {
+  margin-top: 5px;
+}
+.m-t {
+  margin-top: 30px;
+}
 .amount input {
   height: 4.5rem !important;
   padding-left: 20px;
   margin-left: 3.5rem !important;
 }
 .amount input::-webkit-input-placeholder {
-   text-align: center;
+  text-align: center;
 }
-
+.container-payment {
+  margin-top: 30px;  
+}
+.c-blue {
+  color: #FF395E;
+}
+.container-amount{
+  position: relative;
+  color: #8FECC8;
+}
+.container-amount span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 /*check*/
 .container-check img {
   width: 80%;

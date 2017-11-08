@@ -10,18 +10,21 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body class="bg-blue">
+    <header>
+      <p>Just Pay</p>
+    </header>
     <div class="container">
       <div class="row">
         <div class="col s12">
           <div class="row flex-container center">
-            <div class="col s4 offset-s4">
+            <div class="col s8 offset-s2 col l4 offset-l4">
               <p>Pay made to</p>
               <h4 id="name-contact"></h4>
               <h6 id="phone-contact"></h6>
-              <p>Amount</p>
-              <div>
-                <span>s/</span>
-                <h1 id="amount"></h1>
+              <p class="m-t c-blue">Amount</p>
+              <div class="container-amount c-blue">
+                <span class="c-blue">s/</span>
+                <h1 id="amount" class="c-blue"></h1>
               </div>
               <p>Date: <span id="date"></span> - <span id="hour"></span></p>
             </div>
