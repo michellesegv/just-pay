@@ -6,9 +6,9 @@ $('input').on('keyup', (e) => {
   /* Active or not button 'enter' */
   if (name == 'true' && password == true) {
     $('#button-start').removeClass('disabled');
-    $('#button-start').addClass('waves-effect waves-light button-start');
+    $('#button-start').addClass('waves-effect waves-light button');
   } else {
-    $('#button-start').removeClass('waves-effect waves-light button-start');
+    $('#button-start').removeClass('waves-effect waves-light button');
     $('#button-start').addClass('disabled');
   }
 

@@ -22,8 +22,14 @@ rgba(234, 226, 183, 1);
 */
 
 /* clases reutilizables */
+body {
+  color: white;
+}
 .center {
-  text-align: center
+  text-align: center;
+}
+.text-left {
+  text-align: left;
 }
 .center-vertical {
   vertical-align: middle;
@@ -33,7 +39,14 @@ rgba(234, 226, 183, 1);
   color: red;
   border-bottom-color: red !important;
 }
+.bg-blue {
+  background-color: rgba(0, 48, 73, 1);
+  color: white;
+}
+.bg-yellow {
+  background-color: rgba(252, 191, 73, 1);
 
+}
 /* index */
 input {
   box-shadow:0 0 0 0 transparent !important;
@@ -41,12 +54,59 @@ input {
 .container-data {
   background-color: rgba(0, 48, 73, 1);
   color: rgba(252, 191, 73, 1);
-  height: 100vh;
-  padding-top: 30vh;
 }
-.button-start {
+.flex-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.button {
   background-color: rgba(214, 40, 40, 1);
 }
 
-/* Welcome */
+/* Contacts */
 
+.contact {
+  display: flex;
+  align-items: center;
+  background-color: rgba(214, 40, 40, 1);
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+.data-contact {
+  width: 75%;
+  padding-left: 10%;
+  display: inline-block;
+}
+.data-contact h6 {
+  font-size: 1.3rem;
+}
+.image-user {
+  display: inline-block;
+  width: 15%;
+}
+.image-user i {
+  font-size: 3rem;
+}
+
+/* Payment */
+.amount i, .amount input {
+  font-size: 4rem !important;
+}
+
+.amount input {
+  height: 4.5rem !important;
+  padding-left: 20px;
+  margin-left: 3.5rem !important;
+}
+.amount input::-webkit-input-placeholder {
+   text-align: center;
+}
+
+/*check*/
+.container-check img {
+  width: 80%;
+}
+.container-check h2 {
+  font-size: 2rem;
+}
