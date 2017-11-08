@@ -3,9 +3,50 @@
   padding: 0;
   margin: 0;
 }
-.container-data {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/*
+Azul verdoso oscuro
+rgba(0, 48, 73, 1);
+
+Rojo pinky
+rgba(214, 40, 40, 1);
+
+Naranja
+rgba(247, 127, 0, 1);
+
+Amarillo yelow claro
+rgba(252, 191, 73, 1);
+
+Hueso
+rgba(234, 226, 183, 1);
+*/
+
+/* clases reutilizables */
+.center {
+  text-align: center
 }
+.center-vertical {
+  vertical-align: middle;
+}
+.red-border {
+  border-bottom: 3px;
+  color: red;
+  border-bottom-color: red !important;
+}
+
+/* index */
+input {
+  box-shadow:0 0 0 0 transparent !important;
+}
+.container-data {
+  background-color: rgba(0, 48, 73, 1);
+  color: rgba(252, 191, 73, 1);
+  height: 100vh;
+  padding-top: 30vh;
+}
+.button-start {
+  background-color: rgba(214, 40, 40, 1);
+}
+
+/* Welcome */
+
